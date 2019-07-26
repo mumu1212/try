@@ -1,0 +1,42 @@
+/* pages/interrogation/index.wxss */
+.search {
+    box-shadow: 0px 7px 7px -7px #5E5E5E;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 35rpx 0px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.nav-list .project {
+    flex: 25%;
+    flex-direction: column;
+    margin-top: 25rpx;
+    text-align: center;
+    margin-bottom: 25rpx;
+}
+.iconfont {
+  font-size:32px;
+  color: rgb(55, 169, 198);  
+  margin-bottom: 10rpx;
+}
+.but {
+    text-align: center;
+}
+
+.but .iconfont {
+    font-size: 28rpx;
+    color: #666;
+    font-style: 900;
+}
+.duty {
+    display: flex;
+    justify-content:space-between;
+    padding: 20rpx;
+    background-color: #e6e7e9;
+    color: #83838f;
+}

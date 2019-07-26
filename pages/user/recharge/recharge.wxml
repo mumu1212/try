@@ -1,0 +1,35 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}">
+    <view slot="content" class='title-name'>住院充值</view>
+</cu-custom>
+
+<view class='user-info margin padding bg-white radius'>
+    <view class='info-top margin'>
+        <text class='user-name'>就诊人</text>
+        <text class='green-zt'>切换就诊人 ></text>
+    </view>
+    <view class='pandding margin'>
+        就诊卡：0056154834
+    </view>
+</view>
+
+<view class='rechage margin bg-white radius'>
+    <view class='rechage-top info-top '>
+        <text class='place'>选择充值金额</text>
+        <view>余额：
+            <text class='green-zt'>0.00</text> </view>
+    </view>
+
+    <view class='change-sm margin'>
+        <view class='sm-top margin'>
+            <view bindtap='activeNav' data-index='{{1}}' class='top-box {{currenIndex==1?"active":""}}'>100</view>
+            <view bindtap='activeNav' data-index='{{2}}' class='top-box {{currenIndex==2?"active":""}}'>200</view>
+            <view bindtap='activeNav' data-index='{{3}}' class='top-box {{currenIndex==3?"active":""}}'>300</view>
+        </view>
+
+        <view class='sm-bot sm-top margin'>
+            <view bindtap='activeNav' data-index='{{4}}' class='top-box2 .top-box {{currenIndex==4?"active":""}}'>1000</view>
+            <input bindtap='activeNav' data-index='{{5}}' class='top-box3 .top-box ' placeholder='请输入整数金额'></input>
+        </view>
+    </view>
+</view>
+<button class='btn'>充值</button>

@@ -1,0 +1,110 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">医生列表</view>
+</cu-custom>
+
+<view class='nav_wrap'>
+    <scroll-view class='nav' scroll-x > 
+        <view  bindtap='activeNav' data-index='{{index}}'
+         class='nav-flex {{index==currenIndex?"active":""}}'
+         wx:for="{{datatime}}" wx:key="{{index}}" >
+            <view >
+                {{item.shijian}}
+            </view>
+            <view>
+                {{item.xingqi}}
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<view class='margin pandding-top'>
+上午    
+</view>
+<view class='margin pandding-top'>
+    <view class='doctor margin-top'>
+        <view bindtap='doctorinfo' class="cu-list menu-avatar">
+            <view class="cu-item ">
+                <view class="cu-avatar round lg" 
+                style="background-image:url(../../../images/doctor.jpg)">
+                </view>
+                <view class="content">
+                    <view class="text-pink">
+                    <text class="text-cut">向承发</text>
+                     </view>
+                    <view class="text-gray text-sm flex">
+                        <text class="text-cut">擅长：儿科、生长发育、内分泌疾病</text>
+                     </view>
+                </view>
+                <view class="action">
+                    <view class="cu-tag round bg-cyan m">余 5</view>
+                </view>
+         </view>
+        </view>
+    </view>
+    <view class='doctor margin-top '>
+        <view class="cu-list menu-avatar">
+            <view class="cu-item ">
+                <view class="cu-avatar round lg" 
+                style="background-image:url(../../../images/doctor.jpg)">
+                </view>
+                <view class="content">
+                    <view class="text-pink">
+                    <text class="text-cut">向承发</text>
+                     </view>
+                    <view class="text-gray text-sm flex">
+                        <text class="text-cut">擅长：儿科、生长发育、内分泌疾病</text>
+                     </view>
+                </view>
+                <view class="action">
+                    <view class="cu-tag round bg-cyan m">余 5</view>
+                </view>
+         </view>
+        </view>
+    </view>
+</view>
+
+<view class='margin pandding-top'>
+下午    
+</view>
+<view class='margin pandding-top'>
+    <view class='doctor margin-top'>
+        <view bindtap='doctorinfo' class="cu-list menu-avatar">
+            <view class="cu-item ">
+                <view class="cu-avatar round lg" 
+                style="background-image:url(../../../images/doctor.jpg)">
+                </view>
+                <view class="content">
+                    <view class="text-pink">
+                    <text class="text-cut">向承发</text>
+                     </view>
+                    <view class="text-gray text-sm flex">
+                        <text class="text-cut">擅长：儿科、生长发育、内分泌疾病</text>
+                     </view>
+                </view>
+                <view class="action">
+                    <view class="cu-tag round bg-cyan m">余 5</view>
+                </view>
+         </view>
+        </view>
+    </view>
+    <view class='doctor margin-top '>
+        <view class="cu-list menu-avatar">
+            <view class="cu-item ">
+                <view class="cu-avatar round lg" 
+                style="background-image:url(../../../images/doctor.jpg)">
+                </view>
+                <view class="content">
+                    <view class="text-pink">
+                    <text class="text-cut">向承发</text>
+                     </view>
+                    <view class="text-gray text-sm flex">
+                        <text class="text-cut">擅长：儿科、生长发育、内分泌疾病</text>
+                     </view>
+                </view>
+                <view class="action">
+                    <view class="cu-tag round bg-cyan m">余 5</view>
+                </view>
+         </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,55 @@
+/* pages/user/recharge/recharge.wxss */
+.info-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-name {
+    font-size: 38rpx;
+    font-weight: 700;
+}
+
+.place {
+    margin-bottom: 25rpx;
+}
+.green-zt {
+    color: green;
+}
+
+.rechage-top {
+    border-bottom: 1px solid #ddd;
+    padding: 20rpx 60rpx 10rpx;
+}
+
+.sm-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-box {
+    text-align: center;
+    line-height: 60rpx;
+    width: 150rpx;
+    height: 60rpx;
+    border: 1px solid #ddd;
+}
+
+.top-box3 {
+    width: 350rpx;
+}
+
+.sm-bot {
+    padding-bottom: 25rpx;
+}
+
+.btn {
+    background-color: #1cbbb4;
+    color: white;
+    margin-top: 35rpx;
+    width: 92%;
+}
+
+.active {
+    background-color: #1cbbb4;
+    color: white;
+}

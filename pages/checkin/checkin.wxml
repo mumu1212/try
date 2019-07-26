@@ -1,0 +1,48 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}">
+    <view slot="content" class='title-name'>住院服务</view>
+</cu-custom>
+
+<view class='serve-info bg-white'>
+   <view class='serve-top'>
+        <image src="{{src}}">
+        </image>
+   </view>
+   <view class='serve-bot'>
+        <view class='serve serve-1' bindtap='bincar'>
+            <view class='bot-left'>
+                <view class='left-icon'><icon class='iconfont iconbingzhi-copy'></icon></view>
+                <view class='left-wz'>入院登记</view>
+            </view>
+            <view class='bot-right'>
+                <icon class='iconfont icon1202youjiantou'></icon>
+            </view>
+        </view> 
+        <view class='serve serve-2'>
+            <view class='bot-left'>
+                <view class='left-icon'><icon class='iconfont iconyixuefenhui'></icon></view>
+                <view class='left-wz'>住院预缴金</view>
+            </view>
+            <view class='bot-right'>
+                <icon class='iconfont icon1202youjiantou'></icon>
+            </view>
+        </view> 
+        <view class='serve serve-3' bindtap='inquiry'>
+            <view class='bot-left'>
+                <view class='left-icon'><icon class='iconfont iconhouqin'></icon></view>
+                <view class='left-wz'>住院费用查询</view>
+            </view>
+            <view class='bot-right'>
+                <icon class='iconfont icon1202youjiantou'></icon>
+            </view>
+        </view> 
+        <view class='serve serve-4'>
+            <view class='bot-left'>
+                <view class='left-icon'><icon class='iconfont iconqian'></icon></view>
+                <view class='left-wz'>快捷结算</view>
+            </view>
+            <view class='bot-right'>
+                <icon class='iconfont icon1202youjiantou'></icon>
+            </view>
+        </view> 
+   </view>
+</view>

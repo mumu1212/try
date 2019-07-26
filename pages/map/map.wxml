@@ -1,0 +1,3 @@
+<cu-custom bgColor="bg-gradual" isBack='{{true}}'>
+    <view slot="content" class='title-name'>地图</view>
+</cu-custom>

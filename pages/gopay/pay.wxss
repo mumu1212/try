@@ -1,0 +1,37 @@
+/* pages/gopay/pay.wxss */
+
+.pay-pai {
+    background-color: white;
+}
+.light-height {
+    line-height: 45rpx;
+}
+.pay-top {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.pay-left {
+    flex: 2
+}
+
+.pay-right {
+    flex: 4;
+    text-align: left;
+}
+
+.pay-jf {
+    margin-right: 25rpx;
+    margin-bottom: 25rpx;
+}
+.pay-wjf {
+    color: white;
+}
+
+.pay-yjf {
+    color: #666;
+}
+
+.price {
+    color: #FF6037;
+}

@@ -1,0 +1,38 @@
+.docard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blankcard {
+    margin-top: 50rpx;
+    height: 150rpx;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 95%;
+    background-color: white;
+    border: 1rpx solid rgba(153, 153, 153, 0.411);
+    border-radius: 20rpx;
+}
+
+.blankcard icon {
+    margin: 0 20rpx;
+    font-size: 70rpx;
+    width: 50rpx;
+    height: 70rpx;
+    color:#00cdac;
+
+}
+
+/* 自助办卡文字 */
+.title-top{
+    font-weight: 800;
+}
+.bind-title {
+    margin: 0 30rpx;
+}
+.bind-title .introduce{
+    color: #999;
+}

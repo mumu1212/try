@@ -1,0 +1,9 @@
+/* pages/user/payHistory/pay.wxss */
+.action-edit{
+    width:150rpx;
+    text-align:center;
+
+}
+.bg-red{
+    background-color: red;
+}

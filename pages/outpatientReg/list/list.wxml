@@ -1,0 +1,21 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">选择科室</view>
+</cu-custom>
+<!-- 搜索框 -->
+<view class="cu-bar bg-white search " style="top:{{CustomBar}}px">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="搜索医生、科室" confirm-type="search" bindinput="searchIcon"></input>
+  </view>
+</view>
+
+<view class="bg-white list-nav" >
+<view class='chance'>选择科室</view>
+<view class='selection'>
+<view class='sub-list' bindtap='todoctorinfo'>特需门诊（妇科、儿科、产科、生殖分泌等）</view>
+<view class='sub-list'>妇科门诊</view>
+<view class='sub-list'>生殖内分泌门诊</view>
+<view class='sub-list'>生殖医学（不孕症/辅助助孕）门诊</view>
+</view>
+
+</view>

@@ -1,0 +1,6 @@
+.hosp-text{
+    margin: 30rpx;
+    text-indent: 5rpx;
+    letter-spacing: 3.5rpx;
+    font-size: 30rpx;
+}

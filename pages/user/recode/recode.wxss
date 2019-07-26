@@ -1,0 +1,7 @@
+/* pages/user/recode/recode.wxss */
+.bg-jg {
+    text-align: center;
+    font-size: 32rpx;
+    color: #666;
+    margin: 20rpx;
+}

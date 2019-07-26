@@ -1,0 +1,71 @@
+<cu-custom bgColor="bg-gradual-blue">
+  
+</cu-custom>
+<view class="margin-xl padding-xl bg-white radius shadow shadow-lg user-head">
+  <view class="flex justify-center">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取头像昵称 </button>
+    <block wx:else>
+      <view class='text-center' bindtap='edit'>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+        <view class="padding user-name">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+  </view>
+    <view class=" text-center" >
+        <view class=" radius shadow bg-white user-nav">
+            <view class='user-service' bindtap="record"> <icon class='iconfont iconkangfufangan-copy'></icon> 
+                <view>挂号记录</view>
+            </view>
+            <view  class='user-service' bindtap='recharge'> <icon class='iconfont iconkangfuzhongxin-copy1'></icon> 
+                <view>充值缴费</view>
+            </view>
+            <view  class='user-service'> <icon class='iconfont iconhuanzhegoutong-copy'></icon> 
+                <view>就诊卡</view>
+            </view>
+        </view>
+     </view>
+</view>
+
+<view class='bg-white  user-advice'>
+    <view class="advice-title">就医信息</view>
+    <view class='advice-option'>
+       <view class='option' bindtap='history'> 
+           <icon class='iconfont iconyinhangqia1'></icon> 
+           <view>缴费记录</view>
+        </view> 
+        <view class='option'> 
+           <icon class='iconfont iconbingzhi-copy'></icon> 
+           <view>检验报告</view>
+        </view> 
+        <view class='option'> 
+           <icon class='iconfont iconhouqin'></icon> 
+           <view>便民门诊</view>
+        </view> 
+        <view class='option'> 
+           <icon class='iconfont iconneijingzhongxin'></icon> 
+           <view>B超</view>
+        </view> 
+    </view>
+</view>
+
+<view class='bg-white  user-Interrogation' >
+    <view class="Interrogation-title">问诊信息</view>
+    <view class='Interrogation-option'>
+        <view class='option'> 
+           <icon class='iconfont iconyijian'></icon> 
+           <view>问诊记录</view>
+        </view> 
+        <view class='option'> 
+           <icon class='iconfont iconkangfuchanpin-copy'></icon> 
+           <view>医嘱信息</view>
+        </view> 
+        <view class='option' bindtap='guide'> 
+           <icon class='iconfont iconyixuefenhui'></icon> 
+           <view>院外导航</view>
+        </view> 
+        <view class='option'> 
+           <icon class='iconfont iconmingyitang-copy'></icon> 
+           <view>管理就诊人</view>
+        </view> 
+    </view>
+</view>

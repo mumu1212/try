@@ -1,0 +1,53 @@
+<cu-custom bgColor="bg-gradual-blue">
+
+</cu-custom>
+  <view class="cu-bar search">
+    <view class="search-form round ">
+      <text class="cuIcon-search "></text>
+      <input class="bg-white" type="text" placeholder="请输入科室或医生" confirm-type="search"></input>
+    </view>
+  </view>
+  <view class='bg-white'>
+    <view class='nav-list bg-white'>
+      <view class='project'>
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>产科</view> 
+      </view>  
+      <view class='project'>
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>妇科</view> 
+      </view>
+      <view class='project'>
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>儿科</view> 
+      </view>
+      <view class='project'>
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>计划生育</view> 
+      </view>
+      <view class='project' wx:if="{{masks}}">
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>优生学科</view> 
+      </view>
+      <view class='project' wx:if="{{masks}}">
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>生殖医学中心</view> 
+      </view>
+      <view class='project' wx:if="{{masks}}">
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>超声科</view> 
+      </view>
+      <view class='project' wx:if="{{masks}}">
+        <icon class='iconfont iconkangfufangan-copy'></icon>
+        <view>人类精子库</view> 
+      </view>  
+    </view>
+    
+    <view class='but' wx:if="{{!masks}}" bindtap="mask">展开<icon class='iconfont iconbottom'></icon></view>
+    <view class='but' wx:if="{{masks}}" bindtap="mask">收起<icon class='iconfont icontop'></icon></view>
+    
+    <view class='duty'>
+       <text>服务电话：028-85085983</text>
+       <text>《检查检验项目说明》</text>       
+    </view>
+</view>    

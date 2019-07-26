@@ -1,0 +1,56 @@
+.info,.fill-info,.fill-info,.info-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.wrap{
+    width: 95%;
+    border-radius: 20rpx;
+    background-color: white;
+}
+.info{
+    flex-direction: column;
+}
+/* 标题 */
+.info-title{
+    width: 95%;
+    height: 80rpx;
+    font-weight: 700;
+    margin:50rpx 20rpx 20rpx 20rpx;
+    background-color: white;
+    border-radius: 20rpx;
+}
+/* 填卡信息 */
+.fill-info{
+    height: 100rpx;
+    justify-content:left;
+    margin:0 50rpx;
+
+}
+.fill-info .pic{
+    width: 70%;
+}
+.cu-form-group{
+    padding:0 0rpx;
+
+}
+.fill-in{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+}
+
+.fill-in input{
+    width: 70%;
+}
+/* 提醒 */
+.remind{
+    color: #999;
+}
+.submit{
+    background-color:#00cdac;
+color:white;
+margin: 50rpx 20rpx;
+}

@@ -1,0 +1,75 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/interrogation/index",
+        "pages/user/index/index",
+        "pages/login/login",
+        "pages/user/userInfo/info",
+        "pages/user/recode/recode",
+        "pages/outpatientReg/index/index",
+        "pages/outpatientReg/list/list",
+        "pages/outpatientReg/doctorlist/doctorlist",
+        "pages/guide/guide",
+        "pages/guide/introduce",
+        "pages/user/payHistory/pay",
+        "pages/satisfaction/index",
+        "pages/user/payHistory/goPay",
+        "pages/user/payHistory/history",
+        "pages/outpatientReg/doctorinfo/doctorinfo",
+        "pages/card/index",
+        "pages/card/addcard/addcard",
+        "pages/card/bindcard/bindcard",
+        "pages/checkin/checkin",
+        "pages/bincar/bincar",
+        "pages/gopay/pay",
+        "pages/user/recharge/recharge",
+        "pages/checkin/inquiry/inquiry",
+        "pages/index/news/news",
+        "pages/card/cardlist/index",
+        "pages/card/carddetail/detail",
+        "pages/report/report",
+        "pages/map/map",
+        "pages/outpatientReg/paihao/paihao"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取用户位置信息"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "hosp",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+    },
+    "usingComponents": {
+        "cu-custom": "/colorui/components/cu-custom"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#11cd6e",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "images/home-action.png",
+                "iconPath": "images/home.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/online-action.png",
+                "iconPath": "images/online.png",
+                "pagePath": "pages/interrogation/index",
+                "text": "在线问诊"
+            },
+            {
+                "selectedIconPath": "images/user-action.png",
+                "iconPath": "images/user.png",
+                "pagePath": "pages/user/index/index",
+                "text": "我的信息"
+            }
+        ]
+    }
+}

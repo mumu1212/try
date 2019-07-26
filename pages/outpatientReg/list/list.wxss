@@ -1,0 +1,38 @@
+/* pages/outpatientReg/list/list.wxss */
+.list-nav {
+    width: 95%;
+    height: 100%;
+    margin: 15rpx auto;
+    border-radius: 4px;
+}
+
+.chance{
+    padding: 15rpx;
+    color: #555;
+    font-size: 26rpx;
+    font-weight: bolder;
+    margin: 0 20rpx;
+    
+}
+.selection {
+   color: #555;
+   margin: 0 20rpx; 
+   font-size: 26rpx;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+.sub-list {
+    padding: 15rpx;
+    border-top: 1px solid #ddd;
+    letter-spacing: 5rpx;
+    justify-content:space-between;
+    flex: 50%;
+    white-space:nowrap;
+}
+
+.sub-list:hover{
+    background-color: #cce6ff;
+    color: white;
+}

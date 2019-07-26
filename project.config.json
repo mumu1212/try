@@ -1,0 +1,119 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.7",
+	"appid": "wxf8ae0f0af8fa9722",
+	"projectname": "%E5%85%AD%E7%9B%98%E6%B0%B4%E4%BA%BA%E6%B0%91%E5%8C%BB%E9%99%A2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": 0,
+					"name": "挂号记录",
+					"pathName": "pages/outpatientReg/paihao/paihao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/reg/reg",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改用户信息",
+					"pathName": "pages/user/userInfo/info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "缴费记录",
+					"pathName": "pages/user/payHistory/pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/user/payHistory/goPay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "满意度",
+					"pathName": "pages/satisfaction/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "办卡绑卡",
+					"pathName": "pages/card/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "办卡",
+					"pathName": "pages/card/addcard/addcard",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑卡",
+					"pathName": "pages/card/bindcard/bindcard",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/map/map",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/map/map",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,98 @@
+<cu-custom bgColor="bg-gradual">
+    <view slot="content" class='title-name'>首页</view>
+</cu-custom>
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key>
+        <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+</swiper>
+<!-- 内容栏 -->
+<view class='hosp'>
+    <view class="items">
+        <view class='bind-card' bindtap='bindCard' wx:if="{{ownCard}}">
+            <icon class='iconfont iconyinhangqia1'> 绑定就诊卡+</icon>
+        </view>
+        <view class='binded-card' wx:else>
+            <view class='user-info'>
+                <view class='user-name'>橘猪柯基</view>
+                <view class='user-card-num'>卡号：0123456</view>
+                <view class='switch-icon' bindtap='switchIcon'><icon class='iconfont iconjiaohuan'>切换</icon></view>
+            </view>
+            <view class='user-qrcode'>
+                <view class='qrcode'>
+                    <!-- <icon class='iconfont iconyinhangqia1'></icon> -->
+                    <image class='user-qrcode-shot' bindtap="showModal" data-target="Image" src='https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg'></image>
+                </view>
+                <view class='qrcode-info'>刷卡时请点击</view>
+            </view>
+        </view>
+    </view>
+    <!-- 点击二维码后展开信息 -->
+    <view class="cu-modal {{modalName=='Image'?'show':''}}">
+        <view class="cu-dialog">
+            <view class="bg-img" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg');height:200px;">
+                <view class="cu-bar justify-end text-white">
+                    <view class="action" bindtap="hideModal">
+                        <text class="cuIcon-close "></text>
+                    </view>
+                </view>
+            </view>
+            <view class="cu-bar bg-white">
+                <view class="action margin-0 flex-sub solid-left close-user" bindtap="hideModal">
+                    <view>橘猪柯基</view>
+                    <view>卡号：0123456</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="items">
+        <view class='item' bindtap="register">
+            <icon class='iconfont iconmingyitang-copy-copy'></icon>挂号
+        </view>
+        <view class='item' bindtap='bindCard'>
+            <icon class='iconfont iconyinhangqia1'></icon>办卡绑卡
+        </view>
+        <view class='item' bindtap='gotopay'>
+            <icon class='iconfont iconwodecaifu'></icon>缴费取号
+        </view>
+    </view>
+    <!-- 住院服务 -->
+    <view class='items-spacial'>
+    <view class='build'>
+    <icon class='iconfont iconyixuefenhui'></icon>
+    </view>
+        <view class='live-server' bindtap='checkIn'>
+            <p class="page-title">住院服务</p>
+            <p class='page-text'>相关住院功能服务，线上缴纳预交金</p>
+        </view>
+        <icon class='iconfont icon1202youjiantou right'></icon>
+    </view>
+    <!-- 就医攻略 -->
+    <view class='hosptal-guide'>
+    <view class='guide-top'>
+    <view class='item'><icon class='iconfont icongerenzhongxin-copy'></icon>推荐医生</view>
+    <view class='item'><icon class='iconfont iconmingyitang-copy1'></icon>检验检查</view>
+    <view class='item'><icon class='iconfont iconhuanzhegoutong-copy'></icon>报告查询</view>
+    <view class='item'><icon class='iconfont iconhouqin'></icon>便民门诊</view>
+    <view class='item'><icon class='iconfont iconbingzhi-copy'></icon>医生排班</view>
+    <view class='item' bindtap='gonews'><icon class='iconfont iconhuanzhegoutong'></icon>就医攻略</view>
+    <view class='item'><icon class='iconfont iconyijianfankui'></icon>常见问题</view>
+    </view>
+    </view>
+    <!-- 妇儿联盟 -->
+    <view class='items-spacial' bindtap='profile'>
+        <!-- <icon class='iconfont iconyixuefenhui'></icon> -->
+        <view class='live-server'>
+            <p class='page-title'>六盘水市人民医院</p>
+            <p></p>
+        </view>
+        <icon class='iconfont icon1202youjiantou right'></icon>
+    </view>
+    <view class="padding flex flex-direction">
+  <button class="cu-btn bg-red margin-tb-sm lg" bindtap='log'>满意度调查</button>
+</view>
+    <!-- 电话 -->
+    <view class='telphone'>客服电话：123456789</view>
+</view>

@@ -1,0 +1,21 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}">
+    <view slot="content" class='title-name'>就诊卡</view>
+</cu-custom>
+<view class='user-container'>
+    <view class='container-box'>
+        <view class='box-border'>
+            <view class='user-box'>
+                <view class='user-info'>
+                    <view class='user-name'>橘猪柯基
+                        <view class='default-logo'>默认</view>
+                    </view>
+                    <view class='user-card'>电子就诊卡号：0123456</view>
+                </view>
+                <view class='user-info'>
+                    <image class='user-qrcode-shot' src='https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg'></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='bind-card-button' bindtap='bindCard'><view>办卡/绑卡</view></view>
+</view>

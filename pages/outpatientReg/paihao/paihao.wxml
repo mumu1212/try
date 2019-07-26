@@ -1,0 +1,17 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">paihao</view>
+</cu-custom>
+
+<view class='doctorinfo margin padding bg-white radius'>
+    <view class='img '>
+        <image class="" src="" mode="widthFix" lazy-load="false" binderror="" bindload="">
+            
+        </image>
+    </view>
+
+    <view class='info'>
+       <view class='subinfo'> <text>值班医生：</text> <text>大医生</text></view>
+       <view class='subinfo'> <text>排队可是：</text> <text>内科3室</text></view>
+       <view class='subinfo'> <text>值班时间：</text> <text>14:30--18:00</text></view>
+    </view>
+</view>

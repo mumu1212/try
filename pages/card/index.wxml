@@ -1,0 +1,19 @@
+<cu-custom bgColor="bg-gradual" isBack='{{true}}'>
+    <view slot="content" class='title-name'>办卡/绑卡</view>
+</cu-custom>
+<view class='docard'>
+    <view class='blankcard padding-xl radius shadow bg-white'  bindtap='blankcard'>
+        <icon class='iconfont iconyinhangqia'></icon>
+        <view class='bind-title'>
+            <view class='title-top'>自助办卡</view>
+            <view class='introduce'>通过居民本人身份证信息实名完成办卡</view>
+        </view>
+    </view>
+    <view class='blankcard padding-xl radius shadow bg-white' bindtap='bindcard'>
+        <icon class='iconfont iconyinhangqia'></icon>
+        <view class='bind-title'>
+            <view class='title-top'>绑定就诊卡</view>
+            <view class='introduce'>已有实体卡/电子就诊卡绑定</view>
+        </view>
+    </view>
+</view>

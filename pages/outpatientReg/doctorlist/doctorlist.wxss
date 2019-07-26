@@ -1,0 +1,23 @@
+/* pages/outpatientReg/doctorlist/doctorlist.wxss */
+
+.wx-switch-input{
+    width:82rpx !important;
+    height:40rpx !important;
+    margin:0 !important;
+    padding: 0 !important;
+}
+.nav {
+    white-space: nowrap;
+}
+
+.nav-flex {
+    padding: 20rpx 45rpx;
+    font-size: 23rpx;
+    display: inline-block;
+    text-align: center;
+}
+
+.active {
+    background-color: #1cbbb4;
+    color: white;
+}

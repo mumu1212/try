@@ -1,0 +1,27 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}"><view slot="backText">返回</view><view slot="content" class='title-name'>缴费</view>
+</cu-custom>
+    <view class="cu-form-group">
+        <view class="title">支付方式</view>
+            <picker bindchange="PickerChange" range="{{picker}}" value="{{index}}">
+                <view class="picker">
+                    {{index?picker[index]:'请选择支付方式'}}
+                </view>
+            </picker>
+        </view>
+    <view class="padding flex flex-direction">
+ <button class="cu-btn bg-red margin-tb-sm lg" bindtap='submitCost'>支付</button>
+</view>
+
+<view class="cu-modal {{show?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">Modal标题</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      Modal 内容。
+    </view>
+  </view>
+</view>

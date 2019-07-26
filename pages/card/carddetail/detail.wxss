@@ -1,0 +1,58 @@
+.container-user-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   width: 100%;
+   background-color:white;
+   margin-bottom:20rpx; 
+}
+/* .user-info-end为表格最后一列样式 */
+.user-info,.user-info-end{
+    width: 90%;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30rpx;
+}
+.user-info{
+     border-bottom: 0.1rpx solid rgba(153, 153, 153, 0.178);
+}
+.container-left{
+    color: #999;
+}
+.cuIcon-right{
+    color: #999
+}
+/* 修改手机号码、卡密部分 */
+.edit-user-info{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    background-color: white;
+}
+.edit-container-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 30%;
+height: 100rpx;
+}
+.edit-container-right{
+    width: 300rpx;
+}
+.edit-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180rpx;
+    height: 50rpx;
+    font-size: 25rpx;
+    background-color:#00cdac;
+    color: white;
+}
+.edit-alert{
+    color: #999;
+    margin:15rpx 30rpx;
+}

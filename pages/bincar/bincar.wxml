@@ -1,0 +1,58 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}">
+    <view slot="content" class='title-name'>我的就诊卡</view>
+</cu-custom>
+<view class='padding bind-tips'>
+    <text class='left'>您还可以绑定社保卡哦</text>
+    <text class='right'>开通医保支付</text>
+</view>
+<view class='padding car-tips'>
+    <text class='left'>您还可以绑定5张电子就诊卡</text>
+    <text class='right'>办卡/绑卡</text>
+</view>
+<view class='ifnone' >
+    <view class='img'>
+        <image src="../../images/dog.png"></image>
+        <view class='img-wz'>暂无电子就诊卡</view>
+        <view class='bindcar'>立即办卡</view>
+    </view>
+    <view class='padding bot'>
+        <view class='bot-left'>
+            <icon class='iconfont iconyinhangqia'></icon>
+            <text>绑定就诊卡</text>
+        </view>
+        <text class='bot-right'>立即绑卡></text>
+    </view>
+</view>
+
+<view class='carlist' wx:if="{{bangka}}">
+    <view class='user-car'>
+        <view class='car-info bg-white '>
+            <view class='user-name'>
+                <text class='name'>你是谁</text>
+                <text class='gree'>刷脸就医</text>
+            </view>
+            <view class='carnum'>电子就诊卡号：02001021674</view>
+
+            <view class='bind'><text>点击此处挂号</text><icon class='iconfont iconyoujiantou'></icon></view>
+        </view>
+        <view class='info-right bg-white' >
+            <view class='qecode'><image src="../../images/xie.jpg"></image></view>
+        </view>
+    </view>
+
+    <view class='user-car'>
+        <view class='car-info bg-white '>
+            <view class='user-name'>
+                <text class='name'>你是谁</text>
+                <text class='gree'>刷脸就医</text>
+            </view>
+            <view class='carnum'>电子就诊卡号：02001021674</view>
+
+            <view class='bind'><text>点击此处挂号</text><icon class='iconfont iconyoujiantou'></icon></view>
+        </view>
+        <view class='info-right bg-white' >
+            <view class='qecode'><image src="../../images/xie.jpg"></image></view>
+        </view>
+    </view>
+
+</view>

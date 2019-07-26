@@ -1,0 +1,28 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}">
+    <view slot="content" class='title-name'>六盘水人民医院-新闻</view>
+</cu-custom>
+
+<swiper indicator-dots="false"
+   interval="3000" duration="1000" autoplay>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"  height="80"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='newlist bg-white '>
+    <view class='thenews ' wx:for="{{imgUrls}}">
+        <view class='left-image padding'>
+            <image src="{{item}}"></image>
+        </view>
+        <view class='right-info '>
+            <view class='info-title '>生殖内分泌-2017入院前告知及提醒当天流程</view>
+            <view class='info-bot'>
+                <text class='bot-left'>医院相关</text>
+                <text class='bot-left'>2017-09-08</text>
+            </view>
+        </view>
+    </view>
+</view>
+

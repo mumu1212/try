@@ -1,0 +1,114 @@
+/* pages/outpatientReg/doctorinfo/doctorinfo.wxss */
+
+.doctor-info{
+    position: relative;
+    background-color: rgba(48, 156, 63, 0.2);
+    height: 300rpx;
+    margin-bottom: 150rpx;
+}
+
+.doctor-name {
+    position: absolute;
+    top: 75rpx;
+    left: 155rpx;
+    font-size: 35rpx;
+    color: white;
+    font-weight: 700;
+}
+
+.doctor-subinfo {
+    position: absolute;
+    border-top-left-radius: 15rpx;
+    border-top-right-radius: 15rpx;
+    top: 150rpx;
+}
+
+.doctor-subinfo {
+    height: 260rpx;
+}
+
+.doctor-icon {
+    position: absolute;
+    top: -45rpx;
+}
+
+.info-wz-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45rpx;
+    padding-top:32rpx;
+}
+.info-wz {
+    width: 80%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 40rpx;
+}
+.info-xq {
+    width: 20%;
+    text-align:center;
+    padding-top:50rpx;
+}
+
+.icon1202youjiantou {
+    font-size: 42rpx;
+}
+
+.paiban-info {
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+    padding-bottom: 20rpx;
+    margin-bottom: 30rpx;
+
+}
+
+.info-paib {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.info-left {
+    width: 80%;
+    margin-left: -20rpx;
+}
+
+.info-left .time {
+    color: black;
+    font-size: 30rpx;
+}
+
+
+.info-right {
+    width: 20%;
+    margin-top: 20rpx;
+}
+.info-price text {
+    color: #fe6d5e;
+}
+
+.check-s {
+    width: 92%;
+    margin:30rpx auto 50rpx;
+    text-align: center;
+}
+
+.doctor-icon2 {
+    top:40rpx;
+    left:-182rpx;
+}
+
+.md-big {
+    text-align: left;
+}
+
+.md-title {
+    color: black;
+}
+
+.md-info {
+    color: #666;
+}

@@ -1,0 +1,94 @@
+.user-head{
+    margin: 0;
+    height: 400rpx;
+    background-color: rgba(28, 187, 180, 0.2)
+}
+.user-name {
+  width:220rpx;  
+}
+
+.user-nav {
+    display: flex;
+    flex-direction: row;
+    height:150rpx;
+}
+
+.radius {
+  border-radius:10rpx;  
+}
+
+.user-nav .user-service{
+    flex: 33.33%;
+    flex-direction: column;
+    margin-top: 25rpx;
+
+}
+
+.iconfont {
+  font-size:26px;
+  color: rgb(55, 169, 198);  
+  margin-bottom: 10rpx;
+}
+
+.margin-top {
+  margin-top:100rpx;  
+}
+
+.user-advice {
+    margin-top: 85rpx;
+    border-radius: 10px;
+    width: 96%;
+    margin-left: 15rpx;
+    height: 220rpx;
+    
+}
+
+.advice-title {
+    margin: 25rpx;
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    font-size: 28rpx;
+    border-bottom: 1px solid #ddd;
+}
+.advice-option {
+    display: flex;
+    flex-direction: row;
+    margin: 25rpx;
+    text-align: center
+}
+.advice-option .option {
+    flex: 25%;
+    flex-direction: column;
+    
+}
+.user-Interrogation{
+    margin-top: 20rpx;
+    border-radius: 10px;
+    width: 96%;
+    margin-left: 15rpx;
+    height: 220rpx;
+}
+.Interrogation-title {
+    margin: 25rpx;
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    font-size: 28rpx;
+    border-bottom: 1px solid #ddd;
+}
+
+.Interrogation-option {
+    display: flex;
+    flex-direction: row;
+    margin: 25rpx;
+    text-align: center;
+
+}
+
+.Interrogation-option .option{
+    flex: 25%;
+    flex-direction: column;
+}
+
+.Interrogation-option .option .iconfont {
+    color: #f37b1d;
+}

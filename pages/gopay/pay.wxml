@@ -1,0 +1,47 @@
+<cu-custom bgColor="bg-gradual" isBack="{{true}}">
+    <view slot="content" class='title-name'>我的缴费</view>
+</cu-custom>
+<view class='pay-list'>
+    <view class='margin bg-white radius pay-pai'>
+        <view class='pay-top'>
+            <view class='pay-left margin padding light-height'>
+                <view>费用名称</view>
+                <view>开单科室</view>
+                <view>开单时间</view>
+                <view>费用</view>
+            </view>
+
+            <view class='pay-right margin padding light-height'>
+                <view>卫生材料费</view>
+                <view>外科</view>
+                <view>2019.07.17 14:57:00</view>
+                <view class='price'>¥158.00</view>
+            </view>
+        </view>
+        <view class='pay-bot margin-tb-sm text-right'> 
+            <button class=' cu-btn round bg-green pay-wjf pay-jf'>去缴费</button>
+        </view>
+    </view>
+
+    <view class='margin bg-white radius pay-pai'>
+        <view class='pay-top'>
+            <view class='pay-left margin padding light-height'>
+                <view>费用名称</view>
+                <view>开单科室</view>
+                <view>开单时间</view>
+                <view>费用</view>
+            </view>
+
+            <view class='pay-right margin padding light-height'>
+                <view>卫生材料费</view>
+                <view>外科</view>
+                <view>2019.07.17 14:57:00</view>
+                <view class='price'>¥158.00</view>
+            </view>
+        </view>
+        <view class='pay-bot margin-tb-sm text-right'> 
+            <button class=' cu-btn round bg-gray pay-jf pay-yjf'>已缴费</button>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,5 @@
+/* pages/user/userInfo/info.wxss */
+.cu-btn{
+     background-color: #00cdac;
+    color: white;
+}

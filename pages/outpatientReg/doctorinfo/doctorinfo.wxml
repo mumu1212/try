@@ -1,0 +1,93 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="backText">医生主页</view>
+</cu-custom>
+<view class='doctor-info'>
+    <view class='doctor-name'>Doctor</view>
+    <view class='doctor-subinfo bg-white'>
+        <view class="cu-avatar lg round margin-left doctor-icon" style="background-image:url(../../../images/doctor.jpg);"></view> 
+        <view class='info-wz-flex'>
+            <view class='info-wz'>
+                <view>擅长：儿科、新生儿疾病、儿科学</view>
+                <view>介绍：曾任儿科教研室副主任。四川省医学会儿科专委会副主任委员、新生儿学组副组长，担任华西医科大学学</view> 
+            </view>
+            <view class='info-xq' bindtap="showModal" data-target="Modal"><icon class='iconfont icon1202youjiantou'></icon></view>
+        </view>
+    </view>
+</view>
+<view class='paiban-info bg-white radius margin shadow'>
+    <view class='info-paib'>
+        <view class='info-left padding'>
+            <view class='time'><text>2019-07-15 </text> <text> 今日</text> <text> 上午</text></view>
+            <view class='info-ks'>特需门诊（妇科、儿科、产科、生殖内分泌等</view>
+            <view class='info-price' >余<text>0 </text> <text decode='{{true}}'>&nbsp;￥300</text></view>
+        </view>
+        <view class='info-right grid col-5 padding-sm'>
+            <view class="margin-tb-sm text-center" >
+                <button wx:if="{{yuyue1}}" class="cu-btn round bg-cyan" style="width: 120rpx;">预约</button>
+                <button wx:if="{{yuyue}}" class="cu-btn round bg-darkGray" style="width: 120rpx;color:white;background-color:#c9ccca;">已满              </button>
+            </view>
+        </view> 
+    </view>
+    <view class='check-s' wx:if="{{!masks}}" bindtap="mask">
+        <text>查看全部排班 </text> <icon class='iconfont iconbottom'></icon>
+    </view>
+    <view class='info-paib' wx:if="{{masks}}" >
+        <view class='info-left padding'>
+            <view class='time'><text>2019-07-15 </text> <text> 今日</text> <text> 上午</text></view>
+            <view class='info-ks'>特需门诊（妇科、儿科、产科、生殖内分泌等</view>
+            <view class='info-price' >余<text>0 </text> <text decode='{{true}}'>&nbsp;￥300</text></view>
+        </view>
+        <view class='info-right grid col-5 padding-sm'>
+            <view class="margin-tb-sm text-center" >
+                <button wx:if="{{yuyue1}}" class="cu-btn round bg-cyan" style="width: 120rpx;">预约</button>
+                <button wx:if="{{yuyue}}" class="cu-btn round bg-darkGray" style="width: 120rpx;color:white;background-color:#c9ccca;">已满              </button>
+            </view>
+        </view> 
+    </view>
+    <view class='info-paib' wx:if="{{masks}}" >
+        <view class='info-left padding'>
+            <view class='time'><text>2019-07-15 </text> <text> 今日</text> <text> 上午</text></view>
+            <view class='info-ks'>特需门诊（妇科、儿科、产科、生殖内分泌等</view>
+            <view class='info-price' >余<text>0 </text> <text decode='{{true}}'>&nbsp;￥300</text></view>
+        </view>
+        <view class='info-right grid col-5 padding-sm'>
+            <view class="margin-tb-sm text-center" >
+                <button wx:if="{{yuyue1}}" class="cu-btn round bg-cyan" style="width: 120rpx;">预约</button>
+                <button wx:if="{{yuyue}}" class="cu-btn round bg-darkGray" style="width: 120rpx;color:white;background-color:#c9ccca;">已满              </button>
+            </view>
+        </view> 
+    </view>
+    <view class='info-paib' wx:if="{{masks}}">
+        <view class='info-left padding'>
+            <view class='time'><text>2019-07-15 </text> <text> 今日</text> <text> 上午</text></view>
+            <view class='info-ks'>特需门诊（妇科、儿科、产科、生殖内分泌等</view>
+            <view class='info-price' >余<text>0 </text> <text decode='{{true}}'>&nbsp;￥300</text></view>
+        </view>
+        <view class='info-right grid col-5 padding-sm'>
+            <view class="margin-tb-sm text-center" >
+                <button bindtap='paihao' wx:if="{{yuyue}}" class="cu-btn round bg-cyan" style="width: 120rpx;">预约</button>
+                <button wx:if="{{yuyue1}}" class="cu-btn round bg-darkGray" style="width: 120rpx;color:white;background-color:#c9ccca;">已满 </button>
+            </view>
+        </view> 
+    </view>
+      <view class='check-s' wx:if="{{masks}}" bindtap="mask">
+        <text>收起全部排班 </text> <icon class='iconfont icontop'></icon>
+    </view>
+</view>
+
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="cu-avatar lg round doctor-icon2" style="background-image:url(../../../images/doctor.jpg);"></view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl md-big ">
+      <view class='md-title'>擅长：</view>
+      <view class='md-info'>儿科、新生儿疾病、儿科学</view>
+      <view class='md-title' style='margin-top:15rpx;'>医生介绍：</view>
+      <view class='md-info'>曾任儿科教研室副主任。四川省医学会儿科专委会副主任委员、新生儿学组副组长，担任华西医科大学学报等杂志编委，1968年毕业于四川医学院，1983年获儿科学硕士学位。长期从事儿科新生儿专业临床工作，并先后从事巨细胞病毒感染及新生儿缺氧缺血性脑病临床及科研工作，先后承担国家自然科研基金1项，国家教委博士点专项基金2项，卫生厅基金1项，获四川省科技进步二等奖、三等奖各1项，参加编写专著8本，发表学术论文60余篇</view>
+    </view>
+  </view>
+</view>
